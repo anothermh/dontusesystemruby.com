@@ -1,0 +1,8 @@
+{
+  "name": "dontusesystemruby.com",
+  "packageManager": "yarn@3.5.1",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}

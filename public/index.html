@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <!-- Search Engine -->
+    <meta name="description" content="Why you should always download and compile Ruby from scratch" />
+    <meta name="image" content="https://dontusesystemruby.com/android-chrome-512x512.png" />
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Don't Use System Ruby" />
+    <meta itemprop="description" content="Why you should always download and compile Ruby from scratch" />
+    <meta itemprop="image" content="https://dontusesystemruby.com/android-chrome-512x512.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Don't Use System Ruby" />
+    <meta name="twitter:description" content="Why you should always download and compile Ruby from scratch" />
+    <meta name="twitter:image:src" content="https://dontusesystemruby.com/android-chrome-512x512.png" />
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Don't Use System Ruby" />
+    <meta name="og:description" content="Why you should always download and compile Ruby from scratch" />
+    <meta name="og:image" content="https://dontusesystemruby.com/android-chrome-512x512.png" />
+    <meta name="og:url" content="https://dontusesystemruby.com/" />
+    <meta name="og:site_name" content="Don't Use System Ruby" />
+    <meta name="og:type" content="website" />
+    <title>Don't Use System Ruby</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link
+      rel="stylesheet"
+      data-style-group="themeable"
+      media="(prefers-color-scheme: dark)"
+      href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <link
+      rel="stylesheet"
+      data-style-group="themeable"
+      media="(prefers-color-scheme: light)"
+      href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+    <style>
+      @import url("//fonts.googleapis.com/css?family=Lato|Quicksand|Source+Sans+Pro:300,400,600");
+      :root {
+        --base-font-family: "Quicksand", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+        --link-color: #409cff;
+        --link-color--hover: #3772b0;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why not?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>You're probably here because you asked someone for help with the version of <a href=\"https://www.ruby-lang.org/\" target=\"_blank\" rel=\"noopener\">Ruby</a> that came pre-installed with your operating system. Your question was probably related to installing, uninstalling, downgrading, upgrading, configuring or using that version of Ruby.</p><p>You were sent here so the person you asked doesn't have to take the time to answer your question, because the answer is:</p><blockquote><p><strong>Don't use system Ruby. Use a Ruby version manager to compile and install Ruby yourself because system Ruby is not meant to be used directly.</strong></p></blockquote>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why should I trust you?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>I've been developing Ruby apps professionally since 2013, both as an individual contributor and as an organizational leader, at both some of the largest Ruby shops in the world (like <a href=\"https://github.com/yammer\" target=\"_blank\" rel=\"noopener\">Yammer</a> and <a href=\"https://newrelic.com/ruby\" target=\"_blank\" rel=\"noopener\">New Relic</a>) and at small startups. I've built multiple greenfield products from scratch using Ruby (and sometimes <a href=\"https://rubyonrails.org\" target=\"_blank\" rel=\"noopener\">Ruby on Rails</a>) and have also developed new engineer onboarding guides multiple times. I'm also active on Stack Overflow's <a href=\"https://stackoverflow.com/questions/tagged/ruby\" target=\"_blank\" rel=\"noopener\">ruby tag</a> where questions are commonly solved by using a Ruby manager.</p><p>But if you don't trust me you can always rely on the wisdom of others:</p><ul><li><a href=\"https://thoughtbot.com/blog/psa-do-not-use-system-ruby\" target=\"_blank\" rel=\"noopener\">PSA: Do not use system Ruby</a></li><li><a href=\"https://chrisherring.co/posts/why-you-shouldn-t-use-the-system-ruby\" target=\"_blank\" rel=\"noopener\">Why you shouldn't use the System Ruby</a></li><li><a href=\"http://billpatrianakos.me/blog/2014/05/15/never-use-system-ruby-ever/\" target=\"_blank\" rel=\"noopener\">Never Use System Ruby. Ever.</a></li></ul>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Ruby?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>When programmers talk about Ruby they're really talking about two different things: <a href=\"https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/\" target=\"_blank\" rel=\"noopener\">the programming language used to create Ruby apps</a> and <a href=\"https://github.com/ruby/ruby\" target=\"_blank\" rel=\"noopener\">the interpreter used to run Ruby apps</a>.</p>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is system Ruby?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<blockquote><p><strong>Any version of Ruby that comes pre-installed with the operating system or is available as a package through the operating system's package manager is <em>system Ruby</em>.</strong></p></blockquote><p><a href=\"https://dontusesystemruby.com/#/?id=the-ruby-interpreter\">Ruby</a> is freely available for anyone to use or modify, and it's possible to download its source code, compile it, and have it up and running on your computer in just a few minutes.</p><p>Since Ruby is available for free for commercial use, and since it is the version preferred by the core Ruby maintainers, and since it is the version the Ruby maintainers use to publish new features, Ruby is often bundled with operating systems like Linux and macOS. (some distributions of Linux may not include Ruby by default, but almost all will offer a package to install it)</p><p>Any version of Ruby that either came pre-installed with the operating system or can be downloaded using the operating system's package manager (like <code>sudo apt install ruby</code>) is what we call <em>system Ruby</em>.</p>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is non-system Ruby?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>Any version of Ruby that you download and compile yourself (either with a tool or by hand) qualifies as <em>non-system Ruby</em>. The easiest way to know the difference is if you download a package to install Ruby then you have <em>system Ruby</em>. (because the package manager knows your operating system version and your architecture and thus knows the pre-compiled Ruby package will run safely)</p>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why not use system Ruby?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>There are myriad reasons not to use system Ruby, and they all boil down to this simple reason:</p><p class=\"tip\"><strong>System Ruby belongs to the operating system and is not under your control.</strong></p>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why have system Ruby at all?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>When apps get deployed the servers they run on should be as simple and hardy as possible. <a href=\"https://hub.docker.com/_/ruby\" target=\"_blank\" rel=\"noopener\">Docker containers</a>, for example, are typically stripped down to the smallest size. In this type of environment it may be beneficial to use a prebuilt version of Ruby, either one that comes with the operating system or one installed through a package, because it may be undesirable to compile Ruby from scratch every time a new instance of the app is deployed.</p><p>These environments are more rigidly constructed and less prone to change than a device used for development.</p><p>Version managers are great tools for <em>development environments</em> but not so much for <em>production environments</em>. If you're using a version manager in a production environment then you're probably doing something wrong.</p>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I install Ruby?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>Ruby is easy to install using a version manager. A version manager is an application that will manage the installation and removal of Ruby versions on your device.</p><p>There are many benefits to using a version manager:</p><ul><li>Ruby will be downloaded fresh and compiled from scratch, ensuring it works best on your device</li><li>Ruby will be installed to the directory of your choosing, typically somewhere in your home directory, making it both portable and entirely under your control</li><li>Multiple versions of Ruby can be installed and used concurrently, from very old versions to the latest versions (including MRI, JRuby, TruffleRuby, and more)</li><li>The operating system and its packages won't know about any Ruby installation done with a version manager, and thus can't interfere with it</li><li>Each version of Ruby might require different steps to compile it from scratch but version managers maintain configurations for each version so they will always know how to install any given version — no fiddling with a <code>Makefile</code> required</li></ul>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get help?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>Head over to Stack Overflow and <a href=\"https://stackoverflow.com/help/how-to-ask\" target=\"_blank\" rel=\"noopener\">ask a question</a>. There are many good people who will be happy to provide support.</p><p>Please take time to read the following articles from the <a href=\"https://stackoverflow.com/help\" target=\"_blank\" rel=\"noopener\">StackOverflow Help Center</a> before posting a question to ensure you get the best possible help:</p><ul><li><a href=\"https://stackoverflow.com/help/on-topic\" target=\"_blank\" rel=\"noopener\">What topics can I ask about here?</a></li><li><a href=\"https://stackoverflow.com/help/how-to-ask\" target=\"_blank\" rel=\"noopener\">How do I ask a good question?</a></li><li><a href=\"https://stackoverflow.com/help/minimal-reproducible-example\" target=\"_blank\" rel=\"noopener\">How to create a Minimal, Reproducible Example</a></li></ul>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I update these docs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>This documentation is open source and available on <a href=\"https://github.com/anothermh/dontusesystemruby.com\" target=\"_blank\" rel=\"noopener\">GitHub</a>. Open a pull request with any recommended changes.</p>"
+            }
+          }
+        ]
+      }
+    </script>
+    <script>
+      (function () {
+        // Functions
+        // =========================================================================
+        /**
+         * Adds event listeners to change active stylesheet and restore previously
+         * activated stylesheet on reload.
+         *
+         * @example
+         *
+         * This link:
+         *   <a href="#" data-style-href="path/to/file.css" data-style-group="foo">Bar</a>
+         * Activates an existing matched <link> (href + group match):
+         *   <link rel="stylesheet alternate" data-style-group="foo" href="deep/path/to/file.css" >
+         * Generates a new <link> if needed (no href + group match):
+         *   <link rel="stylesheet" data-style-group="foo" href="path/to/file.css" >
+         * Disables <link> elements that match group but not href
+         *   <link rel="stylesheet" data-style-group="foo" href="some/other/file.css" >
+         * Ignores <link> elements that do not match href and group
+         *   <link rel="stylesheet" data-style-group="bar" href="some/other/file.css" >
+         */
+        function initStyleSwitcher() {
+          var SESSION_STORAGE_KEY = "activeStylesheetHref";
+          var SESSION_VAL_SEPARATOR = "||";
+
+          var isInitialized = false;
+
+          function createLinkedStylesheet(styleHref, styleGroup) {
+            var activeElm = document.createElement("link");
+
+            activeElm.setAttribute("rel", "stylesheet");
+            activeElm.setAttribute("href", styleHref);
+            activeElm.setAttribute("data-style-group", styleGroup || "");
+
+            document.head.appendChild(activeElm);
+
+            activeElm.addEventListener("load", function linkOnLoad() {
+              activeElm.removeEventListener("load", linkOnLoad);
+              handleSwitch(styleHref, styleGroup);
+            });
+
+            return activeElm;
+          }
+
+          function handleSwitch(styleHref, styleGroup) {
+            var activeElm = styleGroup
+              ? document.querySelector('link[href*="' + styleHref + '"][data-style-group="' + styleGroup + '"]')
+              : document.querySelector('link[href*="' + styleHref + '"]');
+
+            if (!activeElm) {
+              activeElm = createLinkedStylesheet(styleHref, styleGroup);
+
+              // Stylesheet will call this function after loading is complete
+              return;
+            }
+
+            // Remove "alternate" keyword and media attribute
+            activeElm.setAttribute("rel", (activeElm.rel || "").replace(/\s*alternate/g, "").trim());
+            activeElm.removeAttribute("media");
+
+            // Force enable stylesheet (required for some browsers)
+            activeElm.disabled = true;
+            activeElm.disabled = false;
+
+            // Store active style sheet
+            sessionStorage.setItem(
+              SESSION_STORAGE_KEY,
+              styleGroup ? styleHref + SESSION_VAL_SEPARATOR + styleGroup : styleHref
+            );
+
+            var inactiveElms = styleGroup
+              ? document.querySelectorAll(
+                  'link:not([href*="' + styleHref + '"])[data-style-group="' + styleGroup + '"]'
+                )
+              : document.querySelectorAll('link:not([href*="' + styleHref + '"])');
+
+            // Disable other elms
+            for (var i = 0; i < inactiveElms.length; i++) {
+              var elm = inactiveElms[i];
+
+              elm.disabled = true;
+
+              // Fix for browsersync and alternate stylesheet updates. Will
+              // cause FOUC when switching stylesheets during development, but
+              // required to properly apply style updates when alternate
+              // stylesheets are enabled.
+              if (window.browsersyncObserver) {
+                var linkRel = elm.getAttribute("rel") || "";
+                var linkRelAlt = linkRel.indexOf("alternate") > -1 ? linkRel : (linkRel + " alternate").trim();
+
+                elm.setAttribute("rel", linkRelAlt);
+              }
+            }
+
+            // CSS custom property ponyfill
+            if ((window.$docsify || {}).themeable) {
+              window.$docsify.themeable.util.cssVars();
+            }
+          }
+
+          // Event listeners
+          if (!isInitialized) {
+            isInitialized = true;
+
+            // Restore active stylesheet
+            document.addEventListener("DOMContentLoaded", function () {
+              var storedData = sessionStorage.getItem(SESSION_STORAGE_KEY) || "";
+              var storedVals = storedData.split(SESSION_VAL_SEPARATOR);
+              var styleHref = storedVals[0] || "";
+              var styleGroup = storedVals[1] || "";
+
+              if (styleHref) {
+                handleSwitch(styleHref, styleGroup);
+              }
+            });
+
+            // Update active stylesheet
+            document.addEventListener("click", function (evt) {
+              var styleHref = evt.target.getAttribute("data-style-href");
+              var styleGroup = evt.target.getAttribute("data-style-group");
+
+              if (styleHref) {
+                handleSwitch(styleHref, styleGroup);
+                evt.preventDefault();
+              }
+            });
+          }
+        }
+
+        // Main
+        // =========================================================================
+        initStyleSwitcher();
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        coverpage: true,
+        externalLinkTarget: "_blank",
+        maxLevel: 1,
+        nativeEmoji: true,
+        notFoundPage: true,
+        name: '<a style="color: var(--sidebar-name-color);" href="#">Don\'t Use System Ruby</a>',
+        themeable: {
+          readyTransition: true,
+        },
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  </body>
+</html>
